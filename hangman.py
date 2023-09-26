@@ -33,8 +33,6 @@ while not end_game:
       break
     print("Please enter a single character to continue.\n")
 
-  
-
   #Manage player lifes
   if guess not in chosen_word:
     lifes -= 1
