@@ -7,7 +7,7 @@ def prime_check(number = n):
     if number % i == 0:
       is_prime = False
   
-  if is_prime == True:
+  if is_prime:
     print(f"{n} is a prime number.")
   else:
     print(f"{n} is NOT a prime number.")
