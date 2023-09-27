@@ -6,3 +6,11 @@ I created this repository to share some of the projects I do while practicing an
 
 A game where a random word is chosen by the computer and the player tries to guess the word letter by letter. The player has X amount of tries (lifes) and if he can't guess the word within those X amount of tries he/she loses.
 
+## Prime Checker
+
+A simple script which will tell you if the entered number is a prime number or not.
+
+## Caeser Cipher
+
+A script to encode and decode messages, where the user can choose by how many characters in the alpahbet he/she wants to shift the given message by.
+eg: abc -> encode by 3 -> def
