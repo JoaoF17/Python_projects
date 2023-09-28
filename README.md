@@ -14,3 +14,7 @@ A simple script which will tell you if the entered number is a prime number or n
 
 A script to encode and decode messages, where the user can choose by how many characters in the alpahbet he/she wants to shift the given message by.
 eg: abc -> encode by 3 -> def
+
+## RPS (Rock, Paper, Scissor) game
+
+Rock, Paper, Scissor game where the player can choose one out of the 3 options to play and the computer will randomly generate it's play.
