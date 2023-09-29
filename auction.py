@@ -4,7 +4,6 @@ from os import system
 print(logo)
 
 bidders = {}
-#clear = os.system('cls')
 
 more_bidders = True
 while more_bidders:
