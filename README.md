@@ -18,3 +18,6 @@ eg: abc -> encode by 3 -> def
 ## RPS (Rock, Paper, Scissor) game
 
 Rock, Paper, Scissor game where the player can choose one out of the 3 options to play and the computer will randomly generate it's play.
+
+## Days in a Month Script
+Input a month from a certain year and tell get back how many days that month had.
