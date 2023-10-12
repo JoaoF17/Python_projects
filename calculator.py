@@ -40,8 +40,7 @@ print(f"{num1} {operation_symbol} {num2} = {answer}")
 
 again = True
 while again:
-  x = input("Would you like to do another calculation with the previous result? 'Yes' or 'No'\n").lower()
-  if x == "no":
+  if input("Would you like to do another calculation with the previous result? 'Yes' or 'No'\n").lower() == "no":
     again = False
   else:
     for symbol in operations:
