@@ -21,3 +21,6 @@ Rock, Paper, Scissor game where the player can choose one out of the 3 options t
 
 ## Days in a Month Script
 Input a month from a certain year and tell get back how many days that month had.
+
+## Calculator
+Script to make simple calculations
