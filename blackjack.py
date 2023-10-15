@@ -29,21 +29,28 @@ p2 = random_number()
 player = [cards[p1], cards[p2]]
 
 #logic to count points
-points = 0
+player_points = 0
 for point in player:
-  test = card_points[point]
-  points += test
-print(points)
+  single_card_points = card_points[point]
+  player_points += single_card_points
 
 #dealer hand, 1 random card, and a facing down card
 d1 = random_number()
-dealer = [cards[d1], "x"]
-  
+dealer = [cards[d1], "_"]
+
+#logic to count points for computer
+computer_points = 0
+for point in dealer:
+  if point == "_":
+    single_card_points = 0
+  else:
+    single_card_points = card_points[point]
+  computer_points += single_card_points
 
 #function for player to draw a card
 def draw_card():
   player.append(cards[random_number()])
 
 
-print(f"Your hand: {player}")
-print(f"Dealer hand: {dealer}")
+print(f"Your hand: {player} Points: {player_points}")
+print(f"Dealer hand: {dealer} Points: {computer_points}")
