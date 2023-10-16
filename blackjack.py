@@ -61,26 +61,48 @@ while game_on:
   if player_prompt == "y":
     player_draw_card()
     #recalculate points to make sure it's not over 21
+    player_points = 0
     for point in player:
       single_card_points = card_points[point]
       player_points += single_card_points
     if player_points > 21:
+      print(f"Your hand: {player} Points: {player_points}")
+      print(f"Dealer hand: {dealer} Points: {dealer_points}")
       print("You went over, you lost.")
       game_on = False
       
   elif player_prompt == "n":
+    if dealer_points < player_points and dealer_points > 17:
+      dealer_points = 0
+      for point in dealer:
+        single_card_points = card_points[point]
+        dealer_points += single_card_points
+      print(f"Your hand: {player} Points: {player_points}")
+      print(f"Dealer hand: {dealer} Points: {dealer_points}")
+      print("You won!")
+      game_on = False
     while dealer_points < 17:
       dealer_draw_card()
+      dealer_points = 0
       for point in dealer:
         single_card_points = card_points[point]
         dealer_points += single_card_points
       if dealer_points > 21:
+        print(f"Your hand: {player} Points: {player_points}")
+        print(f"Dealer hand: {dealer} Points: {dealer_points}")
         print("Dealer went over, YOU WON!")
+        game_on = False
       elif dealer_points > player_points:
+        print(f"Your hand: {player} Points: {player_points}")
+        print(f"Dealer hand: {dealer} Points: {dealer_points}")
         print("Dealer won!")
         game_on = False
-  elif dealer_points > player_points:
-    print("Dealer won!")
+      elif dealer_points == player_points:
+        print(f"Your hand: {player} Points: {player_points}")
+        print(f"Dealer hand: {dealer} Points: {dealer_points}")
+        print("It's a draw!")
+        game_on = False
+  else:
+    print("Wrong input try again.")
   
-  print(f"Your hand: {player} Points: {player_points}")
-  print(f"Dealer hand: {dealer} Points: {dealer_points}")
+  
