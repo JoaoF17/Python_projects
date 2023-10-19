@@ -26,4 +26,7 @@ Input a month from a certain year and tell get back how many days that month had
 Script to make simple calculations
 
 ## Blackjack game
-Blackjack game -- Still incomplete
+Blackjack game
+
+## BlackJack 1.0
+Improved code for BlackJack game
