@@ -1,4 +1,5 @@
 import random
+from os import system
 
 #function to deal cards
 def deal_card():
@@ -76,6 +77,7 @@ def play_game():
 game_active = True
 while game_active:
   if input("Do you wan't to play a game of BlackJack? Answer with 'Y' or 'N'\n").lower() == 'y':
+    system("clear")
     play_game()
   else:
     game_active = False
