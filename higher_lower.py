@@ -19,11 +19,11 @@ while game_on:
   
   if player_answer == 'a' and a['follower_count'] > b['follower_count']:
     points += 1
-    print(f"Correct! {a['name']} has more followers with {a['follower_count']} than {b['name']} with {b['follower_count']} followers.")
+    print(f"Correct! {a['name']} has more followers with {a['follower_count']} while {b['name']} has {b['follower_count']} followers.")
     print(f"Score: {points}")
   elif player_answer == 'b' and b['follower_count'] > a['follower_count']:
     points += 1
-    print(f"Correct! {b['name']} has more followers with {b['follower_count']} than {a['name']} with {a['follower_count']} followers.")
+    print(f"Correct! {b['name']} has more followers with {b['follower_count']} while {a['name']} has {a['follower_count']} followers.")
     print(f"Score: {points}")
   else:
     print(f"Wrong!\n {a['name']} -> {a['follower_count']}\n {b['name']} -> {b['follower_count']} ")
