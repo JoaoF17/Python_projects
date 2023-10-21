@@ -33,3 +33,6 @@ Improved code for BlackJack game.
 
 ## Guess the Number Game
 Game to find a random number between 1 and 100 within 5 or 10 tries depending on difficulty chosen.
+
+## Higher Lower game
+Game to choose between 2 options, in this case who has the highest following on social media.
