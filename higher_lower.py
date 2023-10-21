@@ -34,11 +34,3 @@ while game_on:
     else:
       game_on = False
     
-    
-  # print(f"{a['name']} -> {a['follower_count']}")
-  # print(f"{b['name']} -> {b['follower_count']}")
-
-  # if a['follower_count'] > b['follower_count']:
-  #   print(f"{a['name']} has more followers with {a['follower_count']}")
-  # else:
-  #   print(f"{b['name']} has more followers with {b['follower_count']}")
