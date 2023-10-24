@@ -36,3 +36,6 @@ Game to find a random number between 1 and 100 within 5 or 10 tries depending on
 
 ## Higher Lower game
 Game to choose between 2 options, in this case who has the highest following on social media.
+
+## Coffee Machine
+Simple script for a coffee machine
