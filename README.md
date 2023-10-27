@@ -39,3 +39,9 @@ Game to choose between 2 options, in this case who has the highest following on 
 
 ## Coffee Machine
 Simple script for a coffee machine
+
+## Hirst Painting
+Script that generates dots (Hirst Painting) on a canva using turtle module.
+
+## Drawing Board
+Drawing board using turtle module. Use 'w', 'a', 's' and 'd' to move and 'r' to start a new board.
