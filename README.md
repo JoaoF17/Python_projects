@@ -45,3 +45,6 @@ Script that generates dots (Hirst Painting) on a canva using turtle module.
 
 ## Drawing Board
 Drawing board using turtle module. Use 'w', 'a', 's' and 'd' to move and 'r' to start a new board.
+
+## Turtle Race
+A scrip to make different instances (turtles) race between each other and find a winner. Each race at a tandom pace.
