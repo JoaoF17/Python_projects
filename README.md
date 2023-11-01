@@ -48,3 +48,9 @@ Drawing board using turtle module. Use 'w', 'a', 's' and 'd' to move and 'r' to 
 
 ## Turtle Race
 A scrip to make different instances (turtles) race between each other and find a winner. Each race at a tandom pace.
+
+## Snake Game
+Classic Snake game, where the snake grows as it eats the food, and the game is over when it toucher either the walls or it's own body.
+
+## Pong game
+Classic Pong game, where the ball bounces between two paddles, and each player (2 players) control a paddle.
