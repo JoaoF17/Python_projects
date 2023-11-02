@@ -54,3 +54,6 @@ Classic Snake game, where the snake grows as it eats the food, and the game is o
 
 ## Pong game
 Classic Pong game, where the ball bounces between two paddles, and each player (2 players) control a paddle.
+
+## Frogger
+Frogger game, where the player has to cross the road without being hit by the cars. Each time the player crosses the road he moves up a level and the cars increase speed.
