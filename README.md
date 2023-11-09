@@ -60,3 +60,9 @@ Frogger game, where the player has to cross the road without being hit by the ca
 
 ## Km to Miles
 A converter of Km to miles.
+
+## Pomodoro app
+An app to increase productivity, work for a certain amount of time, and take breaks.
+25 min work
+5 min break
+on the 8th break, make a long break.
