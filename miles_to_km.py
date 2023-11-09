@@ -3,8 +3,8 @@ from tkinter import *
 #create window
 window = Tk()
 window.title("Km to Mile Converter")
-window.minsize(width=300, height=200)
-window.config(padx=30, pady=30)
+# window.minsize(width=300, height=200)
+window.config(padx=20, pady=20)
 
 #input
 entry = Entry(width=5)
