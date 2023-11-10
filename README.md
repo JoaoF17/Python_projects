@@ -66,3 +66,6 @@ An app to increase productivity, work for a certain amount of time, and take bre
 25 min work
 5 min break
 on the 8th break, make a long break.
+
+## Password Manager app
+An app that creates randomized passwords and stores passwords in a .txt file. App created using tkinter.
