@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 from random import randint, choice, shuffle
 from pyperclip import copy
+from json import dump, load
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 def generate_pass():
@@ -38,17 +39,50 @@ def save_pass():
   website = website_entry.get()
   username = user_entry.get()
   password = password_entry.get()
+  new_data = {
+    website: {
+      "username": username,
+      "password": password
+    }
+  }
   
   if len(website) == 0 or len(username) == 0 or len(password) == 0: #boxes left blank
     messagebox.showinfo(title="Warning", message="You left a field in blank")
   else: #confirm details
-    is_ok = messagebox.askokcancel(title=website, message=f"These are the details entered: \nEmail: {username} \nPassword: {password}")
+    try:
+      with open("data.json", mode="r") as data_file:
+        #reading old data
+        data = load(data_file)
+    except FileNotFoundError:
+      #create the first record in case it doesn't exist
+      with open("data.json", "w") as data_file:
+        dump(new_data, data_file, indent=4)
+    else:
+      #updating old data with new data
+      data.update(new_data)
+      with open("data.json", "w") as data_file:
+        #saving updated data
+        dump(data, data_file, indent=4)
+    finally:
+      #clear fields after submiting data
+      website_entry.delete(0, END)
+      password_entry.delete(0, END)
+
+# ---------------------------- SEARCH FUNCTION ------------------------------- #
+def search():
+  search_website = website_entry.get()
+  
+  try:
+    with open("data.json", "r") as data_file:
+      search_data = load(data_file)
+  except FileNotFoundError:
+    messagebox.showinfo(title="Error", message="Error! No datafile found.")
+  else:
+    try:
+      messagebox.showinfo(title=search_website, message=f"Username: {search_data[search_website]['username']} \npassword: {search_data[search_website]['password']}")
+    except KeyError:
+      messagebox.showinfo(title="Error", message=f"You don't have saved credentials for {search_website}.")
     
-    if is_ok:
-      with open("password.txt", mode="a") as password_file:
-        password_file.write(f"{website} || {username} || {password}\n")
-        website_entry.delete(0, END)
-        password_entry.delete(0, END)
 
 # ---------------------------- UI SETUP ------------------------------- #
 #window creation
@@ -67,8 +101,12 @@ website_label = Label(text="Website:")
 website_label.grid(column=0, row=1)
 
 website_entry = Entry()
-website_entry.grid(column=1, row=1, columnspan=2, sticky="EW")
+website_entry.grid(column=1, row=1, sticky="EW")
 website_entry.focus() #cursor will be in this field upon app start
+
+#search button
+search_button = Button(text="Search", command=search)
+search_button.grid(column=2, row=1, sticky= "EW")
 
 #user label and entry
 user_label = Label(text="Email/Username:")
