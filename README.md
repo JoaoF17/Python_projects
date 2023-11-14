@@ -69,3 +69,6 @@ on the 8th break, make a long break.
 
 ## Password Manager app
 An app that creates randomized passwords and stores passwords in a .txt file. App created using tkinter.
+
+## Flash Card Project
+Learning app, in this case to learn french, that keeps track of the words we know and don't know. 
