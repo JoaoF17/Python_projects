@@ -72,3 +72,6 @@ An app that creates randomized passwords and stores passwords in a .txt file. Ap
 
 ## Flash Card Project
 Learning app, in this case to learn french, that keeps track of the words we know and don't know. 
+
+## Birthday Wisher
+Automated email sender, in this script case, automate birthday wishes and send a message to the birthdya present. Script will randomly pick between given messages.
