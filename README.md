@@ -75,3 +75,6 @@ Learning app, in this case to learn french, that keeps track of the words we kno
 
 ## Birthday Wisher
 Automated email sender, in this script case, automate birthday wishes and send a message to the birthdya present. Script will randomly pick between given messages.
+
+## My Workouts
+Input what type of exercise was done and it will POST in the given google sheets. Integration with Nutritionix API for exercise data and Sheety API to POST the data to google sheets.
