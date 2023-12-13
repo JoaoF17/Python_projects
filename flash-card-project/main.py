@@ -36,7 +36,6 @@ def flip_card():
   canvas.itemconfig(card_background, image=card_back)
   canvas.itemconfig(title, text="English", fill="white")
   canvas.itemconfig(word, text=current_card["English"], fill="white")
-  
 
 # ---------------------------- UI Interface ------------------------------- #
 #window creation
