@@ -6,7 +6,7 @@ from random import choice
 
 load_dotenv() 
 
-my_email = "joao@gmail.com"
+my_email = "joao.fernandess17@gmail.com"
 my_pass = os.getenv("EMAIL_PASS") #change pass in .env
 
 #open quotes text file
@@ -20,7 +20,7 @@ print(message)
 now = dt.datetime.now()
 weekday = now.weekday()
 
-if weekday == 2:
+if weekday == 3:
   #setting up the bot to send the email
   with smtplib.SMTP("smtp.gmail.com") as connection:
     connection.starttls()
@@ -30,7 +30,3 @@ if weekday == 2:
       to_addrs="joao_fernandess17@hotmail.com", 
       msg=f"Subject: Motivational Quote\n\n{message}"
     )
-
-
-
-
